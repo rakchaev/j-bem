@@ -26,7 +26,7 @@ JBem.init({
     // const applyTemplate = R.curry(BEMHTML.apply)('virtual-dom');
     applyTemplate: applyTemplate,
     // Принимает начальное БЭМ-дерево страницы.
-    // Если была серверная шаблонизация и нужно связать bemjson с html, прокидваем bemjson с сервера. Можно как-то получить и напрямую передать в JBem.init либо научить JBem забирать самому из DOM, например, script[@type='text/bemjson'].
+    // Если была серверная шаблонизация и нужно связать bemjson с html, прокидываем bemjson с сервера. Можно как-то получить и напрямую передать в JBem.init либо научить JBem забирать самому из DOM, например, script[@type='text/bemjson'].
     bemjson: {}
 });
 
@@ -37,7 +37,7 @@ JBem.decl('my-block', {
                 this.domElem // По-прежнему хранит ссылку на DOM-узел.
                 this.bemjson // Хранит ссылку на блок в БЭМ-дереве приложения, соответствующий инстансу.
 
-                this.finBlockInside('input').on('change', (e) => {
+                this.findBlockInside('input').on('change', (e) => {
                     const text = e.target.getVal();
                     // При изменении БЭМ-дерева происходит перерисовка изменившихся частей DOM'а.
                     // Например:
