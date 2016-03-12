@@ -23,8 +23,8 @@ JBem.init({
     // Принимает метод любого шаблонизатора, который умеет bemjson -> virtual-dom.
     // Например, учим BEMHTML.apply принимать первым аргументом output = 'html' или 'virtual-dom', по умолчанию 'html'.
     // В этом случае будем передавать
-    // const applyTemplate = R.curry(BEMHTML.apply)('virtual-dom');
-    applyTemplate: applyTemplate,
+    // const applyTemplates = R.curry(BEMHTML.apply)('virtual-dom');
+    applyTemplates: applyTemplates,
     // Принимает начальное БЭМ-дерево страницы.
     // Если была серверная шаблонизация и нужно связать bemjson с html, прокидываем bemjson с сервера. Можно как-то получить и напрямую передать в JBem.init либо научить JBem забирать самому из DOM, например, script[@type='text/bemjson'].
     bemjson: {}
