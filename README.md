@@ -54,3 +54,7 @@ JBem.decl('my-block', {
     }
 });
 ```
+
+## Схожие идеи
+* [Что вы думаете о заворачивании bemjson в immutables?](https://github.com/bem/bem-forum-content-ru/issues/385)
+* [Что вы думаете о виртуальном bemjson дереве на клиенте?](https://github.com/bem/bem-forum-content-ru/issues/447)
